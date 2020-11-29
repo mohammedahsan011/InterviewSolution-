@@ -8,12 +8,12 @@ public class Map {
 	
 	/*
      * 
-     * The given problem can be considered as Dijkstra’s shortest path finding problem. 
+     * The given problem can be considered as Dijkstraâ€™s shortest path finding problem. 
 	 * BFS can be done to find if there would exist a path from one node to another or not. 
-	 * And also to find the distance from one node to another(shortest) Djikstra’s algorithm can be used. 
+	 * And also to find the distance from one node to another(shortest) Djikstraâ€™s algorithm can be used. 
 	 * However in the program different functions are employed to compute the values of different operations.
 
-	 *	Djikstra’s algorithm would find a shortest-path from a fixed start node. 
+	 *	Djikstraâ€™s algorithm would find a shortest-path from a fixed start node. 
 	 *	So the distances or edge weights can be represented as an neighbournodesacency matrix 
 	 *	With a complexity of O(|V|^3).
 
@@ -21,10 +21,10 @@ public class Map {
      * Output Explained : 
      * 
      * 
-     *  Output 1 : 9 -> for the input distance of the route A-B-C (A to B it’s 5 and B to C it’s 4 so a total of 9.)
+     *  Output 1 : 9 -> for the input distance of the route A-B-C (A to B itâ€™s 5 and B to C itâ€™s 4 so a total of 9.)
 	 *  Output 2: 5 -> for the input distance of the route A-D (A to D is 5 given )
-	 *	Output 3: 13 -> for the input distance of route A-D-C (A to D it’s 5 and D to C it’s 8 so a total of 8+5 equal to 13. )
-	 *	Output 4: 22 -> for the input distance of route A-E-B-C-D (A to E it’s 7, and E to B it’s 3 , B to C it’s 4 and C to D it’s 8, so a total of 7+3+4+8 = 10+12 = 22. )
+	 *	Output 3: 13 -> for the input distance of route A-D-C (A to D itâ€™s 5 and D to C itâ€™s 8 so a total of 8+5 equal to 13. )
+	 *	Output 4: 22 -> for the input distance of route A-E-B-C-D (A to E itâ€™s 7, and E to B itâ€™s 3 , B to C itâ€™s 4 and C to D itâ€™s 8, so a total of 7+3+4+8 = 10+12 = 22. )
 	 *	Output 5: NO SUCH ROUTE -> for the input distance of route A-E-D (Although there is a route from A to E, there is no route from E to D.)
 	 *	Output 6: 2 -> the number of trips starting at C and ending at C with a maximum of 3 stops. In the sample data below, there are two such trips: C-D-C (2 stops).[C to D one stop and D to C another stop] and C-E-B-C [C to E one stop, E to B stop, and B to C another stop](3 stops).
 	 *	Output 7: 3 -> the number of trips starting at A and ending at C with exactly 4 stops. In the sample data below, there are three such trips: A to C (via B, C, D which would be A->B->C->D->A , A to B one stop, B to C second stop, C to D third stop, and D to A fourth stop ); A to C (via D, C, D, A to D one stop, D to C second stop, C to D third stop, D to A fourth stop); and A to C (via D, E, B ;  A to D first stop, D to E second stop, E to B third stop, and B to C fourth stop ).
@@ -45,6 +45,7 @@ public class Map {
     private int tripsnum;     // number of trips possible 
 
     
+	// Store the neighbour nodes in a linkedlist 
     private Map(int n) {
         if (n < 0) throw new IllegalArgumentException("Number of nodes must be greater than zero"); // Check if the number of nodes in the given graph is greater than zero or NOT. 
         neighbournodes = (LinkedList<Path>[]) new LinkedList[n];
