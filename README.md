@@ -16,7 +16,7 @@ With a complexity of O(|V|^3)[In the soltion program, functions can be directly 
 
 Running using CMD on Windows :
 
-1.Initially Compile all the files or compile Train.java using javac Train.java 
+1.Initially Compile all the files or compile Train.java using the command  : javac Train.java 
 
 
 2.And run Train.java using the command :  java Train "AB5, BC4, DC8, DE6, AD5, CE2, EB3, AE7" . 
