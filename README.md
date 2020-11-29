@@ -10,7 +10,7 @@ However, In the program various different functions to compute shortest path, nu
 
 Djikstra’s algorithm would find a shortest-path from a fixed start node. 
 So the distances or edge weights can be represented as an adjacency matrix 
-With a complexity of O(|V|^3).
+With a complexity of O(|V|^3)[In the soltion program, functions can be directly used on nodes stored in an appropriate data strucure.]
 
 -> To run the program , put all the JAVA Files (Path.java, Train.java and Map.java) in one single folder and run Train.java
 
